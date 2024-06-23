@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Resume</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="bg-dark text-white text-center py-3">  
+    <h1 class="display-4">Mason Drake</h1>             
+    <p class="lead">Computer Engineer</p> 
+    <img <img src="profile.jpg" class="profile-img img-thumbnail" alt="Profile Image">       
+  </header>
+
+  <div class="container my-5">
+    <section class="mb-4">
+      <h2 class="text-primary">Experience</h2>
+      <table class="table-bordered table">
+        <tr class="bg-dark text-white py-3">
+          <th>Company</th>
+          <th>Role</th>
+          <th>Duration</th>
+        </tr>
+        <tr>
+          <td>Lovin' Bowl</td>
+          <td>Kitchen Manager</td>
+          <td>2012-Present</td>
+        </tr>
+        <tr>
+          <td>Aldi</td>
+          <td>Manager</td>
+          <td>2018-2022</td>
+        </tr>
+        <tr>
+          <td>Tijuana Flats</td>
+          <td>General Manager</td>
+          <td>2010-2016</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="mb-4">
+      <h2 class="text-primary">Education</h2> 
+      <p><strong>BS in Computer Engineering</strong>, FAU, 2023-2025(in progress)</p>
+      <p><strong>AA</strong>, PBSC, 2021-2023</p>     
+    </section>
+
+    <section class="mb-4">
+      <h2 class="text-primary">Skills</h2>      
+      <div class="row">
+        <div class="col-md-4">
+          <p><strong>Programs</strong>: Vivado, Waveforms, PSpice</p>
+        </div>
+        <div class="col-md-4">
+          <p><strong>Devices</strong>: Artix-7, MSP430</p>
+        </div>
+        <div class="col-md-4">
+          <p><strong>Programming Languages</strong>: C++, VHDL, HTML, ASM</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center mb-4">     
+      <button type="button" id="contactbutton" class="btn btn-primary m-3" data-toggle="modal" data-target="#contactModal">Contact Me</button>
+    </section>
+  </div>
+
+  <footer class="bg-light text-center py-3">
+    <p>&copy; 2024 Mason Drake | <a href="mailto:mdrake2023@fau.edu">mdrake2023@fau.edu</a></p>
+  </footer>
+
+  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Contact Me</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Send Message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" 
+   integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+</script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
