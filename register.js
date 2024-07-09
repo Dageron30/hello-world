@@ -10,6 +10,13 @@ function checkForm() {
         fullNameElement.classList.remove("error");
         areFormErrors = false;
     }
+    errorMessages += "</ul>";
+    if (areFormErrors){
+        document.getElementById("formErrors").innerHTML = errorMessages;
+        document.getElementById("formErrors").classList.remove("hide");
+    } else {
+        document.getElementById("formErrors").classList.add("hide");
+    }
     // check email syntax
     // check password meets requirements 
  }
