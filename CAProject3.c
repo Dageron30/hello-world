@@ -107,14 +107,12 @@ else {
 // Cache miss
 cache->misses++;
 // Find LRU block index
-const int lru_index = findLRUBlock(cache->blocks[set_index], cache-
->num_blocks_per_set);
+const int lru_index = findLRUBlock(cache->blocks[set_index], cache->num_blocks_per_set);
 // Replace the least recently used block with new block
 cache->blocks[set_index][lru_index].valid = true;
 cache->blocks[set_index][lru_index].tag = tag;
 cache->blocks[set_index][lru_index].last_used = 0; // Reset LRU
-cache->blocks[set_index][lru_index].dirty = operation == 1 && cache-
->is_write_back ? true : false;
+cache->blocks[set_index][lru_index].dirty = operation == 1 && cache->is_write_back ? true : false;
 }
 }
 // Function to run cache simulation with given parameters and return hit rate
