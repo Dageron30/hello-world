@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#define _CRT_SECURE_NO_WARNINGS //for Visual Studio compiler
+#pragma warning(disable:6031) //ignore scanf warnings
 #define MAX_LINE_LENGTH 100
 // Cache block structure
 typedef struct {
