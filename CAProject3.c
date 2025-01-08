@@ -44,6 +44,9 @@ Cache* initCache(const int size, const int block_size, const int associativity,
 const bool is_unified, const bool is_write_back, const bool is_write_allocate) {
 Cache* cache = malloc(sizeof(Cache));
 //Here, just assign all missing parameters needed and counters for hit and miss
+cache->size = size;
+cache->block_size = block_size;
+cache->associativity = associativity;
 //Write your code here.
 cache->is_unified = is_unified;
 cache->is_write_back = is_write_back;
@@ -63,6 +66,7 @@ for (int j = 0; j < cache->num_blocks_per_set; j++) {
 free(cache->blocks[i][j].data);
 }
 //Write the missing code to free cache
+free(cache->blocks[i]);
 //Write code here
 }
 free(cache->blocks);
